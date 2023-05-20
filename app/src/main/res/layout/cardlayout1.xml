@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/maincard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    android:foreground="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="0dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/fstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rohit"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:padding="2dp"/>
+
+
+                <TextView
+                    android:id="@+id/lstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sharma"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:padding="2dp"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rohitsharma45@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:padding="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
